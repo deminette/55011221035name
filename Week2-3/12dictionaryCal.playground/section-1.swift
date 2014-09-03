@@ -7,7 +7,7 @@ func returnPossibleTips() -> [Int: Double]{
     //2
     var retval = Dictionary<Int, Double>()
     for possibleTips in possibleTipsInferred{
-        let intPCt= Int(possibleTips*100)
+        let intPCt = Int(possibleTips*100)
         //3
         retval[intPCt] = calcTipWithPct(possibleTips)
     }

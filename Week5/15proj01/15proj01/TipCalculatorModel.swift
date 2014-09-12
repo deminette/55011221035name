@@ -1,11 +1,20 @@
-class TipCalculator {
+//
+//  TipCalculatorModel.swift
+//  15proj01
+//
+//  Created by Name on 9/12/14.
+//  Copyright (c) 2014 Student. All rights reserved.
+//
+
+import Foundation
+class TipCalculatorModel {
     
     //2
     var total: Double
     var taxPct: Double
     var subtotal: Double {
-        get {
-            return total / (taxPct+1)
+    get {
+        return total / (taxPct+1)
     }
     }
     
@@ -37,7 +46,3 @@ class TipCalculator {
         return retval
     }
 }
-
-//6
-let tipCalc=TipCalculator(total: 33.25, taxPct: 0.06)
-tipCalc.returnPossibleTips()

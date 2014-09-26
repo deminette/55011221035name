@@ -49,8 +49,6 @@
                         <outlet property="TB01" destination="I3d-DP-Pks" id="ULh-mL-85z"/>
                         <outlet property="TBV" destination="I3d-DP-Pks" id="MEW-xP-XgR"/>
                         <outlet property="TField" destination="vqQ-2w-zoq" id="NJL-Cp-XqE"/>
-                        <outlet property="TV" destination="I3d-DP-Pks" id="ksl-nn-w5i"/>
-                        <outlet property="TableC" destination="I3d-DP-Pks" id="BIO-qj-I5I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

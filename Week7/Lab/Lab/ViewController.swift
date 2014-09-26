@@ -12,15 +12,18 @@ class ViewController: UIViewController {
     
     @IBOutlet var TBV: UITableView!
     @IBOutlet var TField: UITextField!
-    var sortedKeys:[Int] = []
+    var sortedKeys:[String] = []
     
         @IBAction func Addtext(sender: AnyObject) {
         var st=TField.text
+            sortedKeys.append(st)
+            TBV.reloadData()
             
     }
     
     func TBV(TBV: UITableView!, numberOfRowsInSection section: Int) -> Int{
         return sortedKeys.count
+        
     }
     
     func numberOfSectionInTableView(TBV: UITableView!) -> Int {
@@ -31,8 +34,7 @@ class ViewController: UIViewController {
     
     func TBV(TBV: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell!{
         var cell = UITableViewCell(style: UITableViewCellStyle.Value2, reuseIdentifier: nil)
-        let str=self.TField
-        cell.textLabel!.text = "\(str)%:"
+        cell.textLabel!.text = self.sortedKeys[indexPath.row]
         return cell
     }
     

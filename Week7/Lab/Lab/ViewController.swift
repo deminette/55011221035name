@@ -14,11 +14,11 @@ class ViewController: UIViewController {
     @IBOutlet var TField: UITextField!
     var sortedKeys:[String] = []
     
+    @IBOutlet weak var Button: UIButton!
         @IBAction func Addtext(sender: AnyObject) {
         var st=TField.text
             sortedKeys.append(st)
             TBV.reloadData()
-            
     }
     
     func TBV(TBV: UITableView!, numberOfRowsInSection section: Int) -> Int{
@@ -30,7 +30,11 @@ class ViewController: UIViewController {
         return 1
     }
     
-    func TBV(TBV: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!){}
+    func TBV(TBV: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!){
+        let alert = UIAlertController(title: "Item Select", message: "You Selected", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: {(alert:UIAlertAction!) in print("An alert of type\(alert.style.hashValue)")}))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
     
     func TBV(TBV: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell!{
         var cell = UITableViewCell(style: UITableViewCellStyle.Value2, reuseIdentifier: nil)
@@ -41,7 +45,6 @@ class ViewController: UIViewController {
     
     
 
-    @IBOutlet var TB01: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

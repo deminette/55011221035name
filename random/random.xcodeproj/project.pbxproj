@@ -405,6 +405,7 @@
 				3F9FECB519D2AF3000833E47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F9FECB619D2AF3000833E47 /* Build configuration list for PBXNativeTarget "randomTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +414,7 @@
 				3F9FECB819D2AF3000833E47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

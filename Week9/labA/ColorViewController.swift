@@ -10,6 +10,8 @@ import UIKit
 
 class ColorViewController: UIViewController {
 
+    @IBOutlet var SaveButton: UIButton!
+    @IBOutlet var ColorSelectionButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -44,7 +44,7 @@
                                 <rect key="frame" x="0.0" y="81" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="Title" id="Qbe-15-xRI">
-                                        <barButtonItem key="leftBarButtonItem" title="Resgiter" id="Gn1-wd-Zgl">
+                                        <barButtonItem key="leftBarButtonItem" title="Add" id="Gn1-wd-Zgl">
                                             <connections>
                                                 <segue destination="NMP-ng-foB" kind="show" identifier="mysegue" id="8Pt-PE-ggw"/>
                                             </connections>
@@ -66,7 +66,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-174.5" y="121.5"/>
+            <point key="canvasLocation" x="-204.5" y="1.5"/>
         </scene>
         <!--Color Two View Controller-->
         <scene sceneID="ZBz-qj-02N">

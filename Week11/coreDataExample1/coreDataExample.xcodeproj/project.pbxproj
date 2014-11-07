@@ -409,6 +409,7 @@
 				3F5EFE241A03682E00AAA6DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F5EFE251A03682E00AAA6DE /* Build configuration list for PBXNativeTarget "coreDataExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +418,7 @@
 				3F5EFE271A03682E00AAA6DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

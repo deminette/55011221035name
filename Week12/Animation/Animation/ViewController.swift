@@ -19,13 +19,13 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
     override func viewDidLoad() {
         
         
-        let barrier = UIView(frame: CGRect(x: 0, y: 300, width: 130, height: 20))
+        let barrier = UIView(frame: CGRect(x: 0, y: 300, width: 130, height: 100))
         barrier.backgroundColor = UIColor.redColor()
         view.addSubview(barrier)
         
         
         super.viewDidLoad()
-        square = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
+        square = UIView(frame: CGRect(x: 0, y: 0, width: 150, height: 100))
         square.backgroundColor = UIColor.grayColor()
         view.addSubview(square)
         
@@ -44,7 +44,7 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
         collision.collisionDelegate = self
         
         let itemBehaviour = UIDynamicItemBehavior(items: [square])
-        itemBehaviour.elasticity=1.2
+        itemBehaviour.elasticity=0.9
         animator.addBehavior(itemBehaviour)
         
         panGesture = UIPanGestureRecognizer(target: self, action: "panning:")
